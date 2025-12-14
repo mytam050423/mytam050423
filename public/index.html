@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Bếp Việt</title>		
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-custom.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<!-- Scripts -->
+
+<style>
+.mySlides {display:none;}
+</style>    
+</head>
+<body>
+		<div class="container">
+	<!-- nar-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;>
+	  <a class="navbar-brand" href="index.html">
+			<img src="images/images.gif" width="30" height="30" class="d-inline-block align-top" alt="" />
+		</a>
+	 
+	  <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav">
+		  <li class="nav-item active">
+			<a class="nav-link" href="index.html"> Bếp Việt <span class="sr-only">(current)</span></a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+<body>
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/banh_bo.jpg" style="width:100%;height:500px">
+  <img class="mySlides" src="images/bun_ca.jpg" style="width:100%;height:500px">
+  <img class="mySlides" src="images/com_tam_1.jpg" style="width:100%;height:500px">
+  <img class="mySlides" src="images/ga_dot_2.jpg" style="width:100%;height:500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	<!--Content-->
+	<div class="card">
+		<h4 class="card-header">Bếp Việt</h4>
+		<div class="card-body">
+			<table class="table table-bordered">
+				<tbody>
+					<ul class="list-unstyled">
+							<li class='media'>
+								<img class='d-flex mr-3 rounded img-thumbnail' src='images/banh_bo.jpg' width='300' alt='' />
+								<div class='media-body'>
+									<h5 class='mt-0'></h5>
+									<p class='post-meta text-muted'></p>
+									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
+									<p><button class="btn btn-primary" onclick="openPopup1()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup2()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup3()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup4()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="banh_bo.html" role="button">Địa chỉ</a></p>
+								</div>
+							</li>
+							<li class='media'>
+								<img class='d-flex mr-3 rounded img-thumbnail' src='images/com_tam_1.jpg' width='300' alt='' />
+								<div class='media-body'>
+									<h5 class='mt-0'>Cơm tấm sườn bì chả</h5>
+									<p class='post-meta text-muted'></p>
+									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
+									<p><button class="btn btn-primary" onclick="openPopup5()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup6()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup7()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup8()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Địa chỉ</a></p>
+								</div>
+							</li>
+							<li class='media'>
+								<img class='d-flex mr-3 rounded img-thumbnail' src='images/bun_ca.jpg' width='300' alt='' />
+								<div class='media-body'>
+									<h5 class='mt-0'>Bún cá Châu Đốc</h5>
+									<p class='post-meta text-muted'></p>
+									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
+									<p><button class="btn btn-primary" onclick="openPopup9()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup10()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup11()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup12()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Địa chỉ</a></p>
+								</div>
+							</li>
+							<li class='media'>
+								<img class='d-flex mr-3 rounded img-thumbnail' src='images/lau_mam.jpg' width='300' alt='' />
+								<div class='media-body'>
+									<h5 class='mt-0'>Lẩu mắm</h5>
+									<p class='post-meta text-muted'></p>
+									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
+									<p><button class="btn btn-primary" onclick="openPopup13()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup14()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup15()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup16()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="banh_bo.html" role="button">Địa chỉ</a></p>
+								</div>
+							</li>
+							<li class='media'>
+								<img class='d-flex mr-3 rounded img-thumbnail' src='images/ga_dot_2.jpg' width='300' alt='' />
+								<div class='media-body'>
+									<h5 class='mt-0'>Gà đốt ô thum</h5>
+									<p class='post-meta text-muted'></p>
+									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
+									<p><button class="btn btn-primary" onclick="openPopup17()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup18()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup19()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup20()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="banh_bo.html" role="button">Địa chỉ</a></p>
+								</div>
+							</li>
+							<li class='media'>
+								<img class='d-flex mr-3 rounded img-thumbnail' src='images/du_du_dam.jpg' width='300' alt='' />
+								<div class='media-body'>
+									<h5 class='mt-0'>Đu đủ đâm</h5>
+									<p class='post-meta text-muted'></p>
+									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
+									<p><button class="btn btn-primary" onclick="openPopup21()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup22()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup23()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup24()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="banh_bo.html" role="button">Địa chỉ</a></p>
+								</div>
+							</li>
+							<li class='media'>
+								<img class='d-flex mr-3 rounded img-thumbnail' src='images/banh_bo.jpg' width='300' alt='' />
+								<div class='media-body'>
+									<h5 class='mt-0'>Bò leo núi</h5>
+									<p class='post-meta text-muted'></p>
+									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
+									<p><button class="btn btn-primary" onclick="openPopup25()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup26()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup27()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup28()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="banh_bo.html" role="button">Địa chỉ</a></p>
+								</div>
+							</li>
+					</ul>
+					
+				</tbody>
+			</table>
+		</div>
+		
+		<div id="popup" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguyên liệu - Bánh bò thốt nốt</h2>
+				<p>Nguyên liệu của bánh bò thốt nốt khá đơn giản nhưng phải tươi và đúng chuẩn để có được hương vị đặc trưng:</p>
+				<p>• Bột gạo xay mịn</p>	
+				<p>• Đường thốt nốt (nguyên chất, dạng đặc hoặc nấu chảy)</p>	
+				<p>• Nước cốt dừa</p>	
+				<p>• Men hoặc cơm rượu để tạo độ nở</p>	
+				<p>• Một chút muối để cân bằng vị</p>	
+				<button class="btn btn-primary" onclick="closePopup1()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup2" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguồn gốc - Bánh bò thốt nốt</h2>
+				<p>Bánh bò thốt nốt là đặc sản nổi tiếng của miền Tây Nam Bộ, đặc biệt ở An Giang, nơi có nhiều cộng đồng người Khmer sinh sống. Loại bánh này xuất phát từ ẩm thực Khmer Nam Bộ, sau đó lan rộng và trở thành món bánh dân dã quen thuộc trong văn hóa ẩm thực vùng sông nước.</p>
+				<p>Cây thốt nốt – nguyên liệu chính tạo nên hương vị đặc trưng – được trồng nhiều ở Tri Tôn, Tịnh Biên (An Giang). Người dân tận dụng nguồn đường thốt nốt tự nhiên từ cây để làm bánh, tạo nên màu vàng đẹp và mùi thơm không lẫn vào đâu được.</p>	
+				<button class="btn btn-primary" onclick="closePopup2()">Đóng</button>
+			</div>
+		</div>
+		<div id="popup3" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Quy trình chế biến - Bánh bò thốt nốt</h2>
+				<p>Quá trình làm bánh gồm các bước:</p>
+				<p>➤ Ủ bột</p>	
+				<p>Bột gạo trộn với nước và men rồi ủ qua đêm cho đến khi bột nổi, tạo độ xốp tự nhiên.</p>
+				<p>➤ Nấu đường thốt nốt</p>	
+				<p>Đường thốt nốt được đun tan chảy cùng nước và một phần nước cốt dừa, tạo thành hỗn hợp có mùi thơm nồng.</p>
+				<p>➤ Trộn bột</p>	
+				<p>Hỗn hợp đường thốt nốt được trộn vào bột đã ủ để tạo màu vàng óng. Bột tiếp tục được ủ lần 2 để bánh đạt độ nở tốt.</p>	
+				<p>➤ Hấp bánh</p>	
+				<p>Đổ bột vào khuôn nhỏ và đưa vào xửng hấp. Khi chín, bánh nở bung, xuất hiện các lỗ khí nhỏ (rễ tre) bên trong – dấu hiệu của bánh bò đạt chuẩn.</p>
+				<button class="btn btn-primary" onclick="closePopup3()">Đóng</button>
+			</div>
+		</div>
+		
+		<div id="popup4" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Hương vị đặc trưng - Bánh bò thốt nốt</h2>
+				<p>• Mùi thơm nồng của đường thốt nốt, khác hẳn mùi đường mía hay đường cát.</p>	
+				<p>• Vị ngọt thanh, không gắt.</p>	
+				<p>• Kết cấu mềm, xốp, có độ dai nhẹ khi ăn.</p>	
+				<p>• Hậu vị béo nhẹ của nước cốt dừa.</p>	
+				<p>• Bánh có màu vàng cam tự nhiên, nhìn hấp dẫn và đặc trưng chỉ có ở bánh bò thốt nốt.</p>	
+				<button class="btn btn-primary" onclick="closePopup4()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup5" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguyên liệu - Cơm tấm</h2>
+				<p>...</p>
+				<button class="btn btn-primary" onclick="closePopup5()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup6" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguồn gốc - Cơm tấm</h2>
+				
+
+				<button class="btn btn-primary" onclick="closePopup6()">Đóng</button>
+			</div>
+		</div>
+		<div id="popup7" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Quy trình chế biến - Cơm tấm</h2>
+				<p>Quá trình làm bánh gồm các bước:</p>
+				<p>➤ Ủ bột</p>	
+				<p>...</p>
+				<button class="btn btn-primary" onclick="closePopup7()">Đóng</button>
+			</div>
+		</div>
+		
+		<div id="popup8" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Hương vị đặc trưng - Cơm tấm</h2>
+				<p>...</p>		
+				<button class="btn btn-primary" onclick="closePopup8()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup9" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguyên liệu - Bún cá Châu Đốc</h2>
+				<p>...</p>
+				
+				<button class="btn btn-primary" onclick="closePopup9()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup10" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguồn gốc - Bún cá Châu Đốc</h2>
+				<p>...</p>
+				<button class="btn btn-primary" onclick="closePopup10()">Đóng</button>
+			</div>
+		</div>
+		<div id="popup11" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Quy trình chế biến - Bún cá Châu Đốc</h2>
+				<p>...</p>
+				<button class="btn btn-primary" onclick="closePopup11()">Đóng</button>
+			</div>
+		</div>
+		
+		<div id="popup12" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Hương vị đặc trưng - Bún cá Châu Đốc</h2>
+				<p>...</p>	
+				<button class="btn btn-primary" onclick="closePopup12()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup13" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguyên liệu - Lẩu mắm</h2>
+				<p>...</p>
+				<button class="btn btn-primary" onclick="closePopup13()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup14" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguồn gốc - Lẩu mắm</h2>
+				<p>...</p>
+				<button class="btn btn-primary" onclick="closePopup14()">Đóng</button>
+			</div>
+		</div>
+		<div id="popup15" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Quy trình chế biến - Lẩu mắm</h2>
+				<p>...</p>
+				<button class="btn btn-primary" onclick="closePopup15()">Đóng</button>
+			</div>
+		</div>
+		
+		<div id="popup16" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Hương vị đặc trưng - Lẩu mắm</h2>
+				<p>...</p>	
+				<button class="btn btn-primary" onclick="closePopup16()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup17" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguyên liệu - Gà đốt Ô Thum</h2>
+				<p>....</p>
+				<button class="btn btn-primary" onclick="closePopup17()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup18" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguồn gốc - Gà đốt Ô Thum</h2>
+				<p>....</p><button class="btn btn-primary" onclick="closePopup18()">Đóng</button>
+			</div>
+		</div>
+		<div id="popup19" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Quy trình chế biến - Gà đốt Ô Thum</h2>
+				<p>....</p>
+				<button class="btn btn-primary" onclick="closePopup19()">Đóng</button>
+			</div>
+		</div>
+		
+		<div id="popup20" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Hương vị đặc trưng - Bánh bò thốt nốt</h2>
+				<<p>....</p>
+				<button class="btn btn-primary" onclick="closePopup20()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup21" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguyên liệu - Đu Đủ Đâm</h2>
+				<<p>....</p>
+				<button class="btn btn-primary" onclick="closePopup21()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup22" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguồn gốc - Đu Đủ Đâm</h2>
+				<p>....</p>
+				<button class="btn btn-primary" onclick="closePopup22()">Đóng</button>
+			</div>
+		</div>
+		<div id="popup23" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Quy trình chế biến - Đu Đủ Đâm</h2>
+				<p>....</p>
+				<button class="btn btn-primary" onclick="closePopup23()">Đóng</button>
+			</div>
+		</div>
+		
+		<div id="popup24" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Hương vị đặc trưng - Đu Đủ Đâm</h2>
+				<p>....</p>	
+				<button class="btn btn-primary" onclick="closePopup24()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup25" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguyên liệu - Bò leo núi</h2>
+				<<p>....</p>
+				<button class="btn btn-primary" onclick="closePopup25()">Đóng</button>
+			</div>
+		</div>
+
+		<div id="popup26" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Nguồn gốc - Bò leo núi</h2>
+				<<p>....</p>
+				<button class="btn btn-primary" onclick="closePopup26()">Đóng</button>
+			</div>
+		</div>
+		<div id="popup27" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Quy trình chế biến - Bò leo núi</h2>
+				<p>....</p>
+				<button class="btn btn-primary" onclick="closePopup27()">Đóng</button>
+			</div>
+		</div>
+		
+		<div id="popup28" class="popup-overlay">
+			<div class="popup" wigth = '500'>
+				<h2>Hương vị đặc trưng - Bò leo núi</h2>
+				<p>....</p>	
+				<button class="btn btn-primary" onclick="closePopup28()">Đóng</button>
+			</div>
+		</div>
+
+		</div>
+		<!-- footer -->
+		<hr/>
+			
+			<p><img class="img" href="home.html" src="images/face.png" width='30'></img>   <img class="img" color="red" href="banh_bo.html" src="images/maps.gif" width='30' ></img></p><footer>Bản quyền &copy; 2025 bởi tổ 5 lớp 12A3.</footer>
+		</div>
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/popup.js"></script>
+</body>
+</html>
