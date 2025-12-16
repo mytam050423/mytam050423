@@ -2,11 +2,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Bếp Việt</title>		
+<title>Bếp Việt - Hương vị của người Việt</title>		
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/bootstrap-custom.css" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
 <!-- Scripts -->
 
 <style>
@@ -16,31 +22,65 @@
 <body>
 		<div class="container">
 	<!-- nar-->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
 	  <a class="navbar-brand" href="index.html">
-			<img src="images/images.gif" width="30" height="30" class="d-inline-block align-top" alt="" />
+			<img src="images/images.gif" width="90" height="30" class="d-inline-block align-top" alt="" />
 		</a>
+		<span class="text-amber-600 italic font-semibold tracking-wide text-3xl">
+		Bếp Việt - Hương vị của người Việt
+		</span>
 	 
 	  <div class="collapse navbar-collapse" id="navbarNav">
 		<ul class="navbar-nav">
 		  <li class="nav-item active">
-			<a class="nav-link" href="index.html"> Bếp Việt <span class="sr-only">(current)</span></a>
+			<span class="text-amber-900 italic">Bếp Việt - Hương vị của người Việt</span>
 		  </li>
 		</ul>
 	  </div>
 	</nav>
 <body>
+<div class="relative cursor-pointer group animate-float" onclick="openProductDetail(1)" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <div class="relative z-20 transform rotate-2 group-hover:rotate-0 transition-transform duration-700 ease-out">
+                    <div class="bg-white p-4 shadow-2xl rounded-2xl">	
+                        <div class="overflow-hidden rounded-xl h-[450px]">
+							<div class="w3-content w3-display-container">
+								<img class="mySlides" src="images/banh_bo.jpg" style="width:100%;height:500px">
+								<img class="mySlides" src="images/bun_ca.jpg" style="width:100%;height:500px">
+								<img class="mySlides" src="images/com_tam_1.jpg" style="width:100%;height:500px">
+								<img class="mySlides" src="images/ga_dot_2.jpg" style="width:100%;height:500px">
+								<button class="w3-button w3-yellow w3-display-left " onclick="plusDivs(-1)">&#10094;</button>
+								<button class="w3-button w3-yellow w3-display-right " onclick="plusDivs(1)">&#10095;</button>
+							</div>
+						</div>
+                        <div class="pt-4 pb-1 text-center font-bold text-stone-800">
+                            Đặc sản An Giang
+                        </div>
+                        <div class="text-center text-xs text-stone-500 font-medium uppercase tracking-widest">Bếp Việt - Hương vị của người Việt</div>
+                    </div>
+                </div>
+                <!-- Stamps -->
+                <div class="absolute -top-6 -right-6 z-30 bg-amber-400 p-1 rounded-full shadow-xl transform rotate-12 group-hover:rotate-[20deg] transition-transform duration-500">
+                    <div class="border-2 border-dashed border-white rounded-full w-24 h-24 flex items-center justify-center text-center text-xs font-black text-white uppercase leading-tight">
+                        Bếp<br/>Việt
+                    </div>
+                </div>
+                <div class="absolute top-1/2 -left-8 z-30 animate-float-delayed hidden md:block">
+                     <div class="bg-white/90 backdrop-blur px-5 py-3 rounded-2xl shadow-xl border border-stone-100 flex gap-3 items-center">
+                        <span class="text-3xl">🍜</span>
+                        <div>
+                            <p class="text-xs font-bold text-stone-400 uppercase"></p>
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                        </div>
+                     </div>
+                </div>
+			</div>
+				
+    
 
 
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="images/banh_bo.jpg" style="width:100%;height:500px">
-  <img class="mySlides" src="images/bun_ca.jpg" style="width:100%;height:500px">
-  <img class="mySlides" src="images/com_tam_1.jpg" style="width:100%;height:500px">
-  <img class="mySlides" src="images/ga_dot_2.jpg" style="width:100%;height:500px">
+ 
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
+
 
 <script>
 var slideIndex = 1;
@@ -62,81 +102,303 @@ function showDivs(n) {
 }
 </script>
 	<!--Content-->
+
+
+	<section id="section-reviews" class="pb-24 container mx-auto px-4">
+        <div class="flex justify-between items-end mb-12 aos-init aos-animate" data-aos="fade-up">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-serif font-black text-stone-900 tracking-tight">Menu</h2>
+                <p class="text-stone-500 mt-3 text-lg font-medium">Mờ bạn lựa chọn</p>
+            </div>
+            <button class="hidden md:flex items-center font-bold text-amber-700 hover:text-amber-900 transition-colors group">
+                Go <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </button>
+        </div>
+
+        <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+
+			<div class="relative cursor-pointer group animate-float" onclick="" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <div class="relative z-20 transform rotate-2 group-hover:rotate-0 transition-transform duration-700 ease-out">
+                    <div class="bg-white p-4 shadow-2xl rounded-2xl">	
+                        <div class="overflow-hidden rounded-xl h-[450px]">
+							<div class="w3-content w3-display-container">
+								<img class='relative h-56 overflow-hidden' src='images/banh_bo.jpg' width='300' alt='' />
+							</div>
+							<div class="p-6">
+							<div class="flex gap-2 mb-3 flex-wrap">
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup2()">Nguồn gốc</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup1()">Nguyên liệu</span> 
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup3()">Chế biến</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup4()">Hương vị</span> 
+							</div>
+							<h3 class="text-xl font-serif font-bold text-stone-800 mb-2 leading-tight group-hover:text-amber-700 transition-colors">Bánh bò thốt nốt</h3>
+							<p class="text-xs text-stone-500 line-clamp-2 mb-4 h-8 leading-relaxed font-medium">......</p>
+							
+                    </div>
+					</div>
+						
+                        
+                    </div>
+                </div>
+                <!-- Stamps -->
+                <div class="absolute -top-6 -right-6 z-30 bg-amber-400 p-1 rounded-full shadow-xl transform rotate-12 group-hover:rotate-[20deg] transition-transform duration-500">
+                    <div class="border-2 border-dashed border-white rounded-full w-24 h-24 flex items-center justify-center text-center text-xs font-black text-white uppercase leading-tight">
+                        <a class="" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Tri<br/>Tôn</a>
+                    </div>
+                </div>
+                <div class="absolute top-1/3 -left-8 z-30 animate-float-delayed hidden md:block">
+                     <div class="bg-white/90 backdrop-blur px-5 py-3 rounded-2xl shadow-xl border border-stone-100 flex gap-3 items-center">
+                        <span class="text-3xl">🍜</span>
+                        <div>
+                            <p class="text-xs font-bold text-stone-400 uppercase"></p>
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                        </div>
+                     </div>
+                </div>
+			</div>
+
+			<div class="relative cursor-pointer group animate-float" onclick="" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <div class="relative z-20 transform rotate-2 group-hover:rotate-0 transition-transform duration-700 ease-out">
+                    <div class="bg-white p-4 shadow-2xl rounded-2xl">	
+                        <div class="overflow-hidden rounded-xl h-[450px]">
+							<div class="w3-content w3-display-container">
+								<img class='relative h-56 overflow-hidden' src='images/com_tam_1.jpg' width='300' alt='' />
+							</div>
+							<div class="p-6">
+							<div class="flex gap-2 mb-3 flex-wrap">
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup6()">Nguồn gốc</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup5()">Nguyên liệu</span> 
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup7()">Chế biến</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup8()">Hương vị</span> 
+							</div>
+							<h3 class="text-xl font-serif font-bold text-stone-800 mb-2 leading-tight group-hover:text-amber-700 transition-colors">Cơm tấm sườn bì chả</h3>
+							<p class="text-xs text-stone-500 line-clamp-2 mb-4 h-8 leading-relaxed font-medium">......</p>
+							
+                    </div>
+					</div>
+						
+                        
+                    </div>
+                </div>
+                <!-- Stamps -->
+                <div class="absolute -top-6 -right-6 z-30 bg-amber-400 p-1 rounded-full shadow-xl transform rotate-12 group-hover:rotate-[20deg] transition-transform duration-500">
+                    <div class="border-2 border-dashed border-white rounded-full w-24 h-24 flex items-center justify-center text-center text-xs font-black text-white uppercase leading-tight">
+                        <a class="" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Long<br/>Xuyên</a>
+                    </div>
+                </div>
+                <div class="absolute top-1/3 -left-8 z-30 animate-float-delayed hidden md:block">
+                     <div class="bg-white/90 backdrop-blur px-5 py-3 rounded-2xl shadow-xl border border-stone-100 flex gap-3 items-center">
+                        <span class="text-3xl">🍜</span>
+                        <div>
+                            <p class="text-xs font-bold text-stone-400 uppercase"></p>
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                        </div>
+                     </div>
+                </div>
+			</div>
+
+			<div class="relative cursor-pointer group animate-float" onclick="" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <div class="relative z-20 transform rotate-2 group-hover:rotate-0 transition-transform duration-700 ease-out">
+                    <div class="bg-white p-4 shadow-2xl rounded-2xl">	
+                        <div class="overflow-hidden rounded-xl h-[450px]">
+							<div class="w3-content w3-display-container">
+								<img class='relative h-56 overflow-hidden' src='images/bun_ca.jpg' width='300' alt='' />
+							</div>
+							<div class="p-6">
+							<div class="flex gap-2 mb-3 flex-wrap">
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup10()">Nguồn gốc</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup9()">Nguyên liệu</span> 
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup11()">Chế biến</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup12()">Hương vị</span> 
+							</div>
+							<h3 class="text-xl font-serif font-bold text-stone-800 mb-2 leading-tight group-hover:text-amber-700 transition-colors">Bún cá Châu Đốc</h3>
+							<p class="text-xs text-stone-500 line-clamp-2 mb-4 h-8 leading-relaxed font-medium">......</p>
+							
+                    </div>
+					</div>
+						
+                        
+                    </div>
+                </div>
+                <!-- Stamps -->
+                <div class="absolute -top-6 -right-6 z-30 bg-amber-400 p-1 rounded-full shadow-xl transform rotate-12 group-hover:rotate-[20deg] transition-transform duration-500">
+                    <div class="border-2 border-dashed border-white rounded-full w-24 h-24 flex items-center justify-center text-center text-xs font-black text-white uppercase leading-tight">
+                        <a class="" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Châu<br/>Đốc</a>
+                    </div>
+                </div>
+                <div class="absolute top-1/3 -left-8 z-30 animate-float-delayed hidden md:block">
+                     <div class="bg-white/90 backdrop-blur px-5 py-3 rounded-2xl shadow-xl border border-stone-100 flex gap-3 items-center">
+                        <span class="text-3xl">🍜</span>
+                        <div>
+                            <p class="text-xs font-bold text-stone-400 uppercase"></p>
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                        </div>
+                     </div>
+                </div>
+			</div>
+
+			<div class="relative cursor-pointer group animate-float" onclick="" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <div class="relative z-20 transform rotate-2 group-hover:rotate-0 transition-transform duration-700 ease-out">
+                    <div class="bg-white p-4 shadow-2xl rounded-2xl">	
+                        <div class="overflow-hidden rounded-xl h-[450px]">
+							<div class="w3-content w3-display-container">
+								<img class='relative h-56 overflow-hidden' src='images/lau_mam.jpg' width='300' alt='' />
+							</div>
+							<div class="p-6">
+							<div class="flex gap-2 mb-3 flex-wrap">
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup14()">Nguồn gốc</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup13()">Nguyên liệu</span> 
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup15()">Chế biến</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup16()">Hương vị</span> 
+							</div>
+							<h3 class="text-xl font-serif font-bold text-stone-800 mb-2 leading-tight group-hover:text-amber-700 transition-colors">Lẩu mắm</h3>
+							<p class="text-xs text-stone-500 line-clamp-2 mb-4 h-8 leading-relaxed font-medium">......</p>
+							
+                    </div>
+					</div>
+						
+                        
+                    </div>
+                </div>
+                <!-- Stamps -->
+                <div class="absolute -top-6 -right-6 z-30 bg-amber-400 p-1 rounded-full shadow-xl transform rotate-12 group-hover:rotate-[20deg] transition-transform duration-500">
+                    <div class="border-2 border-dashed border-white rounded-full w-24 h-24 flex items-center justify-center text-center text-xs font-black text-white uppercase leading-tight">
+                        <a class="" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Châu<br/>Đốc</a>
+                    </div>
+                </div>
+                <div class="absolute top-1/3 -left-8 z-30 animate-float-delayed hidden md:block">
+                     <div class="bg-white/90 backdrop-blur px-5 py-3 rounded-2xl shadow-xl border border-stone-100 flex gap-3 items-center">
+                        <span class="text-3xl">🍜</span>
+                        <div>
+                            <p class="text-xs font-bold text-stone-400 uppercase"></p>
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                        </div>
+                     </div>
+                </div>
+			</div>
+
+			<div class="relative cursor-pointer group animate-float" onclick="" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <div class="relative z-20 transform rotate-2 group-hover:rotate-0 transition-transform duration-700 ease-out">
+                    <div class="bg-white p-4 shadow-2xl rounded-2xl">	
+                        <div class="overflow-hidden rounded-xl h-[450px]">
+							<div class="w3-content w3-display-container">
+								<img class='relative h-56 overflow-hidden' src='images/ga_dot.jpg' width='300' alt='' />
+							</div>
+							<div class="p-6">
+							<div class="flex gap-2 mb-3 flex-wrap">
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup18()">Nguồn gốc</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup17()">Nguyên liệu</span> 
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup19()">Chế biến</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup20()">Hương vị</span> 
+							</div>
+							<h3 class="text-xl font-serif font-bold text-stone-800 mb-2 leading-tight group-hover:text-amber-700 transition-colors">Gà đốt Ô Thum</h3>
+							<p class="text-xs text-stone-500 line-clamp-2 mb-4 h-8 leading-relaxed font-medium">......</p>
+							
+                    </div>
+					</div>
+						
+                        
+                    </div>
+                </div>
+                <!-- Stamps -->
+                <div class="absolute -top-6 -right-6 z-30 bg-amber-400 p-1 rounded-full shadow-xl transform rotate-12 group-hover:rotate-[20deg] transition-transform duration-500">
+                    <div class="border-2 border-dashed border-white rounded-full w-24 h-24 flex items-center justify-center text-center text-xs font-black text-white uppercase leading-tight">
+                        <a class="" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Tri<br/>Tôn</a>
+                    </div>
+                </div>
+                <div class="absolute top-1/3 -left-8 z-30 animate-float-delayed hidden md:block">
+                     <div class="bg-white/90 backdrop-blur px-5 py-3 rounded-2xl shadow-xl border border-stone-100 flex gap-3 items-center">
+                        <span class="text-3xl">🍜</span>
+                        <div>
+                            <p class="text-xs font-bold text-stone-400 uppercase"></p>
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                        </div>
+                     </div>
+                </div>
+			</div>
+
+			<div class="relative cursor-pointer group animate-float" onclick="" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <div class="relative z-20 transform rotate-2 group-hover:rotate-0 transition-transform duration-700 ease-out">
+                    <div class="bg-white p-4 shadow-2xl rounded-2xl">	
+                        <div class="overflow-hidden rounded-xl h-[450px]">
+							<div class="w3-content w3-display-container">
+								<img class='relative h-56 overflow-hidden' src='images/bo_leo_nui.jpg' width='300' alt='' />
+							</div>
+							<div class="p-6">
+							<div class="flex gap-2 mb-3 flex-wrap">
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup26()">Nguồn gốc</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup25()">Nguyên liệu</span> 
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup27()">Chế biến</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup28()">Hương vị</span> 
+							</div>
+							<h3 class="text-xl font-serif font-bold text-stone-800 mb-2 leading-tight group-hover:text-amber-700 transition-colors">Bò leo núi</h3>
+							<p class="text-xs text-stone-500 line-clamp-2 mb-4 h-8 leading-relaxed font-medium">......</p>
+							
+                    </div>
+					</div>
+						
+                        
+                    </div>
+                </div>
+                <!-- Stamps -->
+                <div class="absolute -top-6 -right-6 z-30 bg-amber-400 p-1 rounded-full shadow-xl transform rotate-12 group-hover:rotate-[20deg] transition-transform duration-500">
+                    <div class="border-2 border-dashed border-white rounded-full w-24 h-24 flex items-center justify-center text-center text-xs font-black text-white uppercase leading-tight">
+                        <a class="" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Tân<br/>Châu</a>
+                    </div>
+                </div>
+                <div class="absolute top-1/3 -left-8 z-30 animate-float-delayed hidden md:block">
+                     <div class="bg-white/90 backdrop-blur px-5 py-3 rounded-2xl shadow-xl border border-stone-100 flex gap-3 items-center">
+                        <span class="text-3xl">🍜</span>
+                        <div>
+                            <p class="text-xs font-bold text-stone-400 uppercase"></p>
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                        </div>
+                     </div>
+                </div>
+			</div>
+
+			<div class="relative cursor-pointer group animate-float" onclick="" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <div class="relative z-20 transform rotate-2 group-hover:rotate-0 transition-transform duration-700 ease-out">
+                    <div class="bg-white p-4 shadow-2xl rounded-2xl">	
+                        <div class="overflow-hidden rounded-xl h-[450px]">
+							<div class="w3-content w3-display-container">
+								<img class='relative h-56 overflow-hidden' src='images/du_du_dam.jpg' width='300' alt='' />
+							</div>
+							<div class="p-6">
+							<div class="flex gap-2 mb-3 flex-wrap">
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup22()">Nguồn gốc</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup21()">Nguyên liệu</span> 
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup23()">Chế biến</span>
+								<span class="text-[10px] font-bold uppercase tracking-wide bg-stone-100 text-stone-600 px-3 py-1.5 rounded-lg border border-stone-200" onclick="openPopup24()">Hương vị</span> 
+							</div>
+							<h3 class="text-xl font-serif font-bold text-stone-800 mb-2 leading-tight group-hover:text-amber-700 transition-colors">Đu đủ đâm</h3>
+							<p class="text-xs text-stone-500 line-clamp-2 mb-4 h-8 leading-relaxed font-medium">......</p>
+							
+                    </div>
+					</div>
+						
+                        
+                    </div>
+                </div>
+                <!-- Stamps -->
+                <div class="absolute -top-6 -right-6 z-30 bg-amber-400 p-1 rounded-full shadow-xl transform rotate-12 group-hover:rotate-[20deg] transition-transform duration-500">
+                    <div class="border-2 border-dashed border-white rounded-full w-24 h-24 flex items-center justify-center text-center text-xs font-black text-white uppercase leading-tight">
+                        <a class="" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Tri<br/>Tôn</a>
+                    </div>
+                </div>
+                <div class="absolute top-1/3 -left-8 z-30 animate-float-delayed hidden md:block">
+                     <div class="bg-white/90 backdrop-blur px-5 py-3 rounded-2xl shadow-xl border border-stone-100 flex gap-3 items-center">
+                        <span class="text-3xl">🍜</span>
+                        <div>
+                            <p class="text-xs font-bold text-stone-400 uppercase"></p>
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                        </div>
+                     </div>
+                </div>
+			</div>
+    </section>
 	<div class="card">
-		<h4 class="card-header">Bếp Việt</h4>
-		<div class="card-body">
-			<table class="table table-bordered">
-				<tbody>
-					<ul class="list-unstyled">
-							<li class='media'>
-								<img class='d-flex mr-3 rounded img-thumbnail' src='images/banh_bo.jpg' width='300' alt='' />
-								<div class='media-body'>
-									<h5 class='mt-0'>Bánh bò thốt nốt</h5>
-									<p class='post-meta text-muted'></p>
-									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
-									<p>  <button class="btn btn-primary" onclick="openPopup2()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup1()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup3()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup4()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="banh_bo.html" role="button">Địa chỉ</a></p>
-								</div>
-							</li>
-							<li class='media'>
-								<img class='d-flex mr-3 rounded img-thumbnail' src='images/com_tam_1.jpg' width='300' alt='' />
-								<div class='media-body'>
-									<h5 class='mt-0'>Cơm tấm sườn bì chả</h5>
-									<p class='post-meta text-muted'></p>
-									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
-									<p> <button class="btn btn-primary" onclick="openPopup6()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup7()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup5()"> trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup8()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Địa chỉ</a></p>
-								</div>
-							</li>
-							<li class='media'>
-								<img class='d-flex mr-3 rounded img-thumbnail' src='images/bun_ca.jpg' width='300' alt='' />
-								<div class='media-body'>
-									<h5 class='mt-0'>Bún cá Châu Đốc</h5>
-									<p class='post-meta text-muted'></p>
-									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
-									<p><button class="btn btn-primary" onclick="openPopup9()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup10()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup11()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup12()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="https://www.google.com/maps/dir/10.3743207,105.4252128/10.371836,105.43829/@10.3747413,105.4226893,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" role="button">Địa chỉ</a></p>
-								</div>
-							</li>
-							<li class='media'>
-								<img class='d-flex mr-3 rounded img-thumbnail' src='images/lau_mam.jpg' width='300' alt='' />
-								<div class='media-body'>
-									<h5 class='mt-0'>Lẩu mắm</h5>
-									<p class='post-meta text-muted'></p>
-									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
-									<p><button class="btn btn-primary" onclick="openPopup13()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup14()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup15()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup16()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="banh_bo.html" role="button">Địa chỉ</a></p>
-								</div>
-							</li>
-							<li class='media'>
-								<img class='d-flex mr-3 rounded img-thumbnail' src='images/ga_dot_2.jpg' width='300' alt='' />
-								<div class='media-body'>
-									<h5 class='mt-0'>Gà đốt ô thum</h5>
-									<p class='post-meta text-muted'></p>
-									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
-									<p><button class="btn btn-primary" onclick="openPopup17()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup18()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup19()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup20()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="banh_bo.html" role="button">Địa chỉ</a></p>
-								</div>
-							</li>
-							<li class='media'>
-								<img class='d-flex mr-3 rounded img-thumbnail' src='images/du_du_dam.jpg' width='300' alt='' />
-								<div class='media-body'>
-									<h5 class='mt-0'>Đu đủ đâm</h5>
-									<p class='post-meta text-muted'></p>
-									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
-									<p><button class="btn btn-primary" onclick="openPopup21()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup22()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup23()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup24()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="banh_bo.html" role="button">Địa chỉ</a></p>
-								</div>
-							</li>
-							<li class='media'>
-								<img class='d-flex mr-3 rounded img-thumbnail' src='images/banh_bo.jpg' width='300' alt='' />
-								<div class='media-body'>
-									<h5 class='mt-0'>Bò leo núi</h5>
-									<p class='post-meta text-muted'></p>
-									<p class='text-justify'>**Bánh bò thốt nốt An Giang** là món bánh đặc sản làm từ bột gạo và đường thốt nốt, có màu vàng tự nhiên, vị ngọt thanh và mùi thơm đặc trưng. Bánh mềm xốp, thường ăn kèm nước cốt dừa, rất được du khách yêu thích.</p>
-									<p><button class="btn btn-primary" onclick="openPopup25()">Nguyên liệu</button>  <button class="btn btn-primary" onclick="openPopup26()">Nguồn gốc</button> <button class="btn btn-primary" onclick="openPopup27()">Quy trình chế biến</button>  <button class="btn btn-primary" onclick="openPopup28()">Hương vị đặc trưng</button>  <a class="btn btn-primary" color="red" href="banh_bo.html" role="button">Địa chỉ</a></p>
-								</div>
-							</li>
-					</ul>
-					
-				</tbody>
-			</table>
-		</div>
-		
 		<div id="popup" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Nguyên liệu - Bánh bò thốt nốt</h2>
@@ -188,34 +450,32 @@ function showDivs(n) {
 
 		<div id="popup5" class="popup-overlay">
 			<div class="popup" wigth = '500'>
-				<h2>Nguyên liệu - Cơm tấm</h2>
-				<p>...</p>
+				<h2>Nguyên liệu - Cơm tấm Long Xuyên</h2>
+				<p>Gạo tấm, sườn nướng, bì, chả trứng; đặc trưng là lòng heo (gan, tim, phèo…), trứng, đồ chua và mỡ hành.</p>
 				<button class="btn btn-primary" onclick="closePopup5()">Đóng</button>
 			</div>
 		</div>
 
 		<div id="popup6" class="popup-overlay">
 			<div class="popup" wigth = '500'>
-				<h2>Nguồn gốc - Cơm tấm</h2>
-				
+				<h2>Nguồn gốc - Cơm tấm Long Xuyên</h2>
+				<p>Xuất phát từ Long Xuyên – vùng đất trù phú của An Giang, món ăn dân dã gắn với đời sống người lao động, dần trở thành đặc sản địa phương.</p>
 
 				<button class="btn btn-primary" onclick="closePopup6()">Đóng</button>
 			</div>
 		</div>
 		<div id="popup7" class="popup-overlay">
 			<div class="popup" wigth = '500'>
-				<h2>Quy trình chế biến - Cơm tấm</h2>
-				<p>Quá trình làm bánh gồm các bước:</p>
-				<p>➤ Ủ bột</p>	
-				<p>...</p>
+				<h2>Quy trình chế biến - Cơm tấm Long Xuyên</h2>
+				<p>Gạo tấm nấu dẻo; sườn ướp đậm đà rồi nướng than; lòng heo làm sạch, luộc chín; nước mắm pha chua ngọt theo khẩu vị miền Tây.</p>
 				<button class="btn btn-primary" onclick="closePopup7()">Đóng</button>
 			</div>
 		</div>
 		
 		<div id="popup8" class="popup-overlay">
 			<div class="popup" wigth = '500'>
-				<h2>Hương vị đặc trưng - Cơm tấm</h2>
-				<p>...</p>		
+				<h2>Hương vị đặc trưng - Cơm tấm Long Xuyên</h2>
+				<p>Đậm đà, béo thơm, hài hòa vị mặn–ngọt; lòng heo mềm, sườn nướng thơm, nước mắm ngọt nhẹ rất riêng của Long Xuyên.</p>		
 				<button class="btn btn-primary" onclick="closePopup8()">Đóng</button>
 			</div>
 		</div>
@@ -223,7 +483,9 @@ function showDivs(n) {
 		<div id="popup9" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Nguyên liệu - Bún cá Châu Đốc</h2>
-				<p>...</p>
+				<p>• Cá lóc (truyền thống).</p>
+ 				<p>• Nước lèo: nghệ tươi, xương cá/xương heo, hành tím, sả, chút mắm ruốc.</p>
+ 				<p>• Ăn kèm: bún sợi lớn, bông điên điển, giá, rau muống bào, rau thơm.</p>
 				
 				<button class="btn btn-primary" onclick="closePopup9()">Đóng</button>
 			</div>
@@ -232,14 +494,17 @@ function showDivs(n) {
 		<div id="popup10" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Nguồn gốc - Bún cá Châu Đốc</h2>
-				<p>...</p>
+				<p>• Xuất xứ: Châu Đốc – An Giang.</p>
+ 				<p>• Hình thành giữa thế kỷ XX, ảnh hưởng ẩm thực Khmer – Chăm – Việt.</p>
 				<button class="btn btn-primary" onclick="closePopup10()">Đóng</button>
 			</div>
 		</div>
 		<div id="popup11" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Quy trình chế biến - Bún cá Châu Đốc</h2>
-				<p>...</p>
+				<p>• Luộc cá → gỡ thịt → ninh xương lấy nước.</p>
+ 				<p>• Phi nghệ + hành → cho nước xương → nêm muối, đường, nước mắm, chút mắm.</p>
+ 				<p>• Trụng bún → xếp cá → chan nước lèo vàng.</p>
 				<button class="btn btn-primary" onclick="closePopup11()">Đóng</button>
 			</div>
 		</div>
@@ -247,7 +512,10 @@ function showDivs(n) {
 		<div id="popup12" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Hương vị đặc trưng - Bún cá Châu Đốc</h2>
-				<p>...</p>	
+				<p>• Nước trong, ngọt thanh.</p>
+ 				<p>• Mùi nghệ thơm nhẹ.</p>
+ 				<p>• Thoảng mùi mắm nhưng không gắt.</p>
+ 				<p>• Rau sống đa dạng, vị miền Tây rõ nét.</p>	
 				<button class="btn btn-primary" onclick="closePopup12()">Đóng</button>
 			</div>
 		</div>
@@ -255,7 +523,10 @@ function showDivs(n) {
 		<div id="popup13" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Nguyên liệu - Lẩu mắm</h2>
-				<p>...</p>
+				<p>• Mắm cá (thường là mắm cá linh hoặc cá sặc).</p>
+ 				<p>• Hải sản và thịt: cá tươi, tôm, mực, thịt heo quay.</p>
+ 				<p>• Rau ăn kèm rất phong phú: bông điên điển, bông súng, rau nhút, cà tím, rau muống, cải xanh…</p>
+ 				<p>• Gia vị: sả, tỏi, ớt, đường.</p>
 				<button class="btn btn-primary" onclick="closePopup13()">Đóng</button>
 			</div>
 		</div>
@@ -263,14 +534,17 @@ function showDivs(n) {
 		<div id="popup14" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Nguồn gốc - Lẩu mắm</h2>
-				<p>...</p>
+				<p>Lẩu mắm có nguồn gốc từ vùng đồng bằng sông Cửu Long, đặc biệt phổ biến ở An Giang, Cần Thơ, Sóc Trăng. Món ăn ra đời từ đời sống sinh hoạt của người dân miền Tây, tận dụng mắm cá – sản vật quen thuộc của vùng sông nước.</p>
 				<button class="btn btn-primary" onclick="closePopup14()">Đóng</button>
 			</div>
 		</div>
 		<div id="popup15" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Quy trình chế biến - Lẩu mắm</h2>
-				<p>...</p>
+				<p>1. Mắm được nấu chín, lọc lấy nước cốt để tạo nước lẩu.</p>
+ 				<p>2. Phi thơm sả, tỏi rồi cho nước mắm đã lọc vào nồi, nêm nếm vừa ăn.</p>
+ 				<p>3. Khi ăn, cho cá, tôm, mực, thịt vào nấu chín trong nồi lẩu đang sôi.</p>
+ 				<p>4. Ăn kèm với nhiều loại rau đồng quê và bún.</p>
 				<button class="btn btn-primary" onclick="closePopup15()">Đóng</button>
 			</div>
 		</div>
@@ -278,7 +552,9 @@ function showDivs(n) {
 		<div id="popup16" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Hương vị đặc trưng - Lẩu mắm</h2>
-				<p>...</p>	
+				<p>• Nước lẩu đậm đà, dậy mùi mắm nhưng không gắt.</p>
+ 				<p>• Vị mặn – ngọt – cay hài hòa, thơm mùi sả.</p>
+ 				<p>• Sự kết hợp giữa vị béo của thịt, vị ngọt của hải sản và vị thanh của rau tạo nên nét đặc trưng khó quên của ẩm thực miền Tây.</p>
 				<button class="btn btn-primary" onclick="closePopup16()">Đóng</button>
 			</div>
 		</div>
@@ -286,7 +562,9 @@ function showDivs(n) {
 		<div id="popup17" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Nguyên liệu - Gà đốt Ô Thum</h2>
-				<p>....</p>
+				<p>• Gà thả vườn (khoảng 1,3–1,8 kg), thịt săn chắc.</p>
+				<p>• Lá chúc (nguyên liệu tạo hương thơm đặc biệt).</p>
+				<p>• Gia vị: sả, tỏi, ớt, muối, đường, tiêu, chút mật ong hoặc dầu để quét lên da.</p>
 				<button class="btn btn-primary" onclick="closePopup17()">Đóng</button>
 			</div>
 		</div>
@@ -294,21 +572,28 @@ function showDivs(n) {
 		<div id="popup18" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Nguồn gốc - Gà đốt Ô Thum</h2>
-				<p>....</p><button class="btn btn-primary" onclick="closePopup18()">Đóng</button>
+				<p>Gà đốt Ô Thum xuất phát từ vùng Bảy Núi (Tri Tôn, An Giang), đặc biệt gắn liền với khu vực hồ Ô Thum. Đây là món ăn của người Khmer địa phương, nổi tiếng nhờ cách nướng gà kết hợp lá chúc – loại lá đặc trưng chỉ phổ biến ở vùng Bảy Núi.</p>
+				<button class="btn btn-primary" onclick="closePopup18()">Đóng</button>
 			</div>
 		</div>
 		<div id="popup19" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Quy trình chế biến - Gà đốt Ô Thum</h2>
-				<p>....</p>
+				<p>1. Gà được làm sạch và ướp hỗn hợp sả – tỏi – ớt – muối – tiêu – lá chúc băm.</p>
+				<p>2. Trước khi nướng, người ta quét dầu hoặc mật ong lên da gà để da vàng giòn.</p>
+				<p>3. Gà được đốt/nướng trên than hồng, phía dưới đặt lá chúc và sả để hương thơm thấm vào thịt.</p>
+				<p>4. Gà chín được xé hoặc cắt ngay khi nóng để giữ độ mọng và thơm.</p>
 				<button class="btn btn-primary" onclick="closePopup19()">Đóng</button>
 			</div>
 		</div>
 		
 		<div id="popup20" class="popup-overlay">
 			<div class="popup" wigth = '500'>
-				<h2>Hương vị đặc trưng - Bánh bò thốt nốt</h2>
-				<<p>....</p>
+				<h2>Hương vị đặc trưng - Gà đốt Ô Thum</h2>
+					<p>• Thịt ngọt, dai mềm của gà thả vườn.</p>
+					<p>• Da vàng giòn, thơm nức mùi lá chúc — mùi thơm rất đặc trưng, không giống gà nướng thông thường.</p>
+					<p>• Vị đậm đà, hơi cay nhẹ, hòa với hương sả, tỏi và mùi lá chúc thanh nồng.</p>
+					<p>• Khi ăn kèm muối tiêu chanh và rau sống, hương vị càng tròn và đậm chất miền Tây.</p>
 				<button class="btn btn-primary" onclick="closePopup20()">Đóng</button>
 			</div>
 		</div>
@@ -316,7 +601,10 @@ function showDivs(n) {
 		<div id="popup21" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Nguyên liệu - Đu Đủ Đâm</h2>
-				<<p>....</p>
+				<p>• Đu đủ bào sợi.</p>
+				<p>• Tỏi, ớt.</p>
+				<p>• Đường, nước mắm, chanh (hoặc me).</p>
+				<p>• Có thể thêm: khô bò, khô cá, rau răm, đậu phộng.</p>
 				<button class="btn btn-primary" onclick="closePopup21()">Đóng</button>
 			</div>
 		</div>
@@ -324,14 +612,19 @@ function showDivs(n) {
 		<div id="popup22" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Nguồn gốc - Đu Đủ Đâm</h2>
-				<p>....</p>
+				<p>• Xuất xứ: miền Tây Nam Bộ (An Giang, Sóc Trăng…)</p>
+ 				<p>• Ảnh hưởng từ ẩm thực Khmer, gần với món Som Tum.</p>
+ 				<p>• Phổ biến trong đời sống dân dã, chợ quê.</p>
 				<button class="btn btn-primary" onclick="closePopup22()">Đóng</button>
 			</div>
 		</div>
 		<div id="popup23" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Quy trình chế biến - Đu Đủ Đâm</h2>
-				<p>....</p>
+				<p> • Giã tỏi + ớt trong cối.</p>
+ 				<p> • Cho đu đủ vào đâm (trộn) cho thấm.</p>
+ 				<p> • Nêm mắm, đường, chua → trộn đều.</p>
+ 				<p> • Thêm topping nếu có.</p>
 				<button class="btn btn-primary" onclick="closePopup23()">Đóng</button>
 			</div>
 		</div>
@@ -339,7 +632,9 @@ function showDivs(n) {
 		<div id="popup24" class="popup-overlay">
 			<div class="popup" wigth = '500'>
 				<h2>Hương vị đặc trưng - Đu Đủ Đâm</h2>
-				<p>....</p>	
+				<p>• Chua – cay – mặn – ngọt hài hòa.</p>
+ 				<p> • Vị cay nồng, ăn rất bắt miệng.</p>
+ 				<p> • Mang đậm chất ẩm thực miền Tây & Khmer.</p>	
 				<button class="btn btn-primary" onclick="closePopup24()">Đóng</button>
 			</div>
 		</div>
@@ -374,13 +669,6 @@ function showDivs(n) {
 				<button class="btn btn-primary" onclick="closePopup28()">Đóng</button>
 			</div>
 		</div>
-
-		</div>
-		<!-- footer -->
-		<hr/>
-			
-			<p><img class="img" href="home.html" src="images/face.png" width='30'></img>   <img class="img" color="red" href="banh_bo.html" src="images/maps.gif" width='30' ></img></p><footer>Bản quyền &copy; 2025 bởi tổ 5 lớp 12A3.</footer>
-		</div>
 		
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -389,10 +677,4 @@ function showDivs(n) {
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/popup.js"></script>
 </body>
-
 </html>
-
-
-
-
-
